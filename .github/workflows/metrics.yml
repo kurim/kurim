@@ -23,6 +23,8 @@ jobs:
           filename: achievements.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_fortune: yes
@@ -34,6 +36,8 @@ jobs:
           filename: general.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           base: header
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
           base_indepth: yes
           config_order: base.header, isocalendar, languages, notable, discussions, topics
           plugin_isocalendar: yes
