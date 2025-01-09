@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 <picture>
-  <img src="/github-metrics.svg" alt="Metrics">
+  <img src="/general.svg" alt="Metrics">
 </picture>
 
 ## Github Statistics
