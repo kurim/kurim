@@ -5,14 +5,13 @@
 name: Metrics
 on:
   # 🌏 Think about the planet! No need to update stats too frequently
-  schedule: [{cron: "0 16 * * *"}]
+  # schedule: [{cron: "0 16 * * *"}]
+  schedule: [{cron: "0 0 * * *"}]
   # 💡 The following line lets you run workflow manually from the action tab!
   workflow_dispatch:
 jobs:
   metrics:
     runs-on: ubuntu-latest
-    environment: 
-      name: production
     permissions:
       contents: write
     steps:
@@ -23,26 +22,23 @@ jobs:
           filename: achievements.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
-          output_action: gist
-          committer_gist: ${{ secrets.GITHUB_TOKEN }}
           plugin_achievements: yes
           plugin_achievements_display: compact
+          plugin_achievements_secrets: yes
           plugin_fortune: yes
 
-      - name: 🦑 General
+      - name: 😺 General
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: general.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           base: header
-          output_action: gist
-          committer_gist: ${{ secrets.GITHUB_TOKEN }}
           base_indepth: yes
           config_order: base.header, isocalendar, languages, notable, discussions, topics
           plugin_isocalendar: yes
           plugin_languages: yes
-          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c, c++, python, ejs
+          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c, c++, ejs
           plugin_languages_details: lines, bytes-size, percentage
           plugin_languages_sections: most-used, recently-used
           plugin_languages_indepth: yes
