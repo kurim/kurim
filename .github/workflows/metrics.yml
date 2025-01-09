@@ -15,18 +15,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: 🦑 Achievements
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          filename: achievements.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          base: ""
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_secrets: yes
-          plugin_fortune: yes
-
       - name: 😺 General
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
