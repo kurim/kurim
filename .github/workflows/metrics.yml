@@ -24,7 +24,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           output_action: gist
-          committer_gist: ${{ secrets.GIST }}
+          committer_gist: ${{ secrets.GITHUB_TOKEN }}
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_fortune: yes
@@ -37,7 +37,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: header
           output_action: gist
-          committer_gist: ${{ secrets.GIST }}
+          committer_gist: ${{ secrets.GITHUB_TOKEN }}
           base_indepth: yes
           config_order: base.header, isocalendar, languages, notable, discussions, topics
           plugin_isocalendar: yes
