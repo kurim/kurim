@@ -18,7 +18,7 @@ jobs:
       - name: 😺 General
         if: ${{ success() || failure() }}
         #uses: lowlighter/metrics@latest
-        uses: hxreborn/github-profile-metrics@fix-recent-languages
+        uses: hxreborn/metrics@fix-recent-languages
         with:
           filename: general.svg
           token: ${{ secrets.GITHUB_TOKEN }}
