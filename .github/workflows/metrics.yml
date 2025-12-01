@@ -18,7 +18,7 @@ jobs:
       - name: 😺 General
         if: ${{ success() || failure() }}
         #uses: lowlighter/metrics@latest
-      - uses: oddstr13/github-profile-metrics@odd-choices
+      - uses: hxreborn/github-profile-metrics@fix-recent-languages
         with:
           use_prebuilt_image: no
           filename: general.svg
