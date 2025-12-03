@@ -6,7 +6,14 @@
 
 ## Github Statistics
 
-[![Github Stats](
-https://github-readme-stats.vercel.app/api?username=kurim&count_private=true&show_icons=true&theme=github_dark_dimmed&count_private=true)](https://github.com/kurim)
+<picture>
+  <img src="/images/contribs.svg" alt="Contribs">
+</picture>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kurim&layout=compact&theme=github_dark_dimmed&show_icons=true)
+<picture>
+  <img src="/images/repos.svg" alt="Repos">
+</picture>
+
+<picture>
+  <img src="/images/languages.svg" alt="languages.svg">
+</picture>
