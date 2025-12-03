@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Generate the languages distribution
-      uses: cicirello/user-statistician@latest
+      uses: cicirello/user-statistician@main
       with:
         image-file: images/languages.svg
         colors: dark-dimmed
@@ -29,7 +29,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Generate the contributions stats
-      uses: cicirello/user-statistician@latest
+      uses: cicirello/user-statistician@main
       with:
         image-file: images/contribs.svg
         colors: dark-dimmed
@@ -38,7 +38,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Generate the repositories stats
-      uses: cicirello/user-statistician@latest
+      uses: cicirello/user-statistician@main
       with:
         image-file: images/repos.svg
         colors: dark-dimmed
